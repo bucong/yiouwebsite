@@ -48,6 +48,7 @@ header .head-nav li p a {
   line-height: 90px;
   color: #fff;
   padding: 0 30px 0 20px;
+  transition: .3s;
 }
 header .head-nav li div {
   position: absolute;
@@ -65,6 +66,7 @@ header .head-nav li div a {
   color: #000;
   padding: 0 30px 0 20px;
   line-height: 44px;
+  transition: .3s;
 }
 header .head-nav li .active {
   color: #7cc46c;
@@ -103,10 +105,21 @@ footer .contain span {
   font-size: 20px;
 }
 .index .banner {
+  position: relative;
   height: 830px;
-  background-image: url(../images/index_10.png);
+}
+.index .banner div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 830px;
+  width: 100%;
   background-repeat: no-repeat;
   background-position: center;
+  display: none;
+}
+.index .banner div:first-child {
+  display: block;
 }
 .index .service .title {
   text-align: center;
@@ -175,7 +188,13 @@ footer .contain span {
 }
 .index .service .server figure img {
   width: 370px;
+  height: 260px;
+  transition: .5s;
+}
+.index .service .server figure div {
+  width: 370px;
   height: 280px;
+  overflow: hidden;
 }
 .index .service .server figcaption {
   padding: 10px 30px 40px 40px;
@@ -198,6 +217,9 @@ footer .contain span {
 .index .service .server figcaption a {
   color: #000;
   font-weight: bold;
+}
+.index .service .server figure:hover img {
+  transform: scale(1.16, 1.16);
 }
 .index .service .server figure:hover a {
   color: #003a81;
@@ -265,12 +287,19 @@ footer .contain span {
   padding: 30px 0;
   border-bottom: 1px solid #efefef;
 }
-.news .list li img {
+.news .list li .img {
   width: 270px;
   height: 136px;
+  overflow: hidden;
+}
+.news .list li .img img {
+  width: 270px;
+  height: 136px;
+  transition: .5s;
 }
 .news .list li .word {
   width: 720px;
+  transition: .5s;
 }
 .news .list li .word a {
   font-size: 16px;
@@ -283,9 +312,12 @@ footer .contain span {
   line-height: 30px;
 }
 .news .list li .time {
-  text-align: right;
   width: 88px;
   color: #999;
+}
+.news .list li .time span {
+  margin-left: 12px;
+  transition: .5s;
 }
 .news .list li .time a {
   display: block;
@@ -294,12 +326,20 @@ footer .contain span {
   border-radius: 4px;
   color: #999;
   margin-top: 20px;
+  transition: 1s;
+}
+.news .list li:hover .img img {
+  transform: scale(1.16, 1.16);
+}
+.news .list li:hover .word {
+  width: 710px;
+  padding-left: 10px;
 }
 .news .list li:hover .word a {
   color: #7cc46c;
 }
-.news .list li:hover .time {
-  text-align: left;
+.news .list li:hover .time span {
+  margin-left: 0;
 }
 .news .list li:hover .time a {
   background: #7cc46c;
@@ -481,9 +521,12 @@ footer .contain span {
   line-height: 30px;
 }
 .join-us .list li .time {
-  text-align: right;
   width: 88px;
   color: #999;
+}
+.join-us .list li .time span {
+  margin-left: 12px;
+  transition: .5s;
 }
 .join-us .list li .time a {
   display: block;
@@ -492,6 +535,7 @@ footer .contain span {
   border-radius: 4px;
   color: #999;
   margin-top: 20px;
+  transition: 1s;
 }
 .join-us .list li:hover .word {
   margin-left: 20px;
@@ -499,8 +543,8 @@ footer .contain span {
 .join-us .list li:hover .word a {
   color: #7cc46c;
 }
-.join-us .list li:hover .time {
-  text-align: left;
+.join-us .list li:hover .time span {
+  margin-left: 0;
 }
 .join-us .list li:hover .time a {
   background: #7cc46c;

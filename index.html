@@ -6,68 +6,17 @@
 		<link rel="stylesheet" href="css/reset.css" />
 		<link rel="stylesheet" href="components/bootstrap/css/bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="components/font-awesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate.css"/>
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
-		<header>
-			<div class="contain flex">
-				<div class="flex logo">
-					<img src="images/index_03.png" />
-					<div>
-						<h6>上海宜欧国际物流有限公司</h6>
-						<h6>OCEAN EAST International Logistics Co.Lbd.</h6>
-					</div>
-				</div>
-				<div class="flex qr">
-					<h5>微信扫一扫<br />宜欧公众号</h5>
-					<img src="images/index_06.png" />
-				</div>
-			</div>
-			<div class="head-nav med">
-				<nav class="contain">
-					<ul>
-						<li>
-							<p><a href="index.html" class="active">首页</a></p>
-						</li>
-						<li>
-							<p><a href="news.html">公司新闻</a></p>
-						</li>
-						<li>
-							<p><a href="javascript:void(0)">主营业务</a></p>
-							<div>
-								<a href="">仓库物流</a>
-								<a href="">保税物流</a>
-								<a href="">运输服务</a>
-								<a href="">堆场服务</a>
-								<a href="">电商服务</a>
-							</div>
-						</li>
-						<li>
-							<p><a href="javascript:void(0)">特色服务</a></p>
-							<div>
-								<a href="">在线服务</a>
-								<a href="">逆向物流</a>
-								<a href="">CHB</a>
-							</div>
-						</li>
-						<li>
-							<p><a href="">业务查询</a></p>
-						</li>
-						<li>
-							<p><a href="joinUs.html">加入我们</a></p>
-						</li>
-						<li>
-							<p><a href="">关于我们</a></p>
-						</li>
-						<li>
-							<p><a href="contactUs.html">联系我们</a></p>
-						</li>
-					</ul>
-				</nav>
-			</div>
-		</header>
+		<script src="js/header.js" type="text/javascript" charset="utf-8"></script>
 		<article class="index">
-			<section class="banner med"></section>
+			<section class="banner">
+				<div class="med" style="background-image: url(images/index_10.png);"></div>
+				<div class="med" style="background-image: url(images/index_1.png);"></div>
+				<div class="med" style="background-image: url(images/index_2.png);"></div>
+			</section>
 			<section class="service contain">
 				<div class="title">
 					<h2>我们的<span>6大服务</span></h2>
@@ -127,7 +76,9 @@
 				</ul>
 				<div class="flex server">
 					<figure>
-						<img src="images/index_31.png"/>
+						<div>
+							<img src="images/index_31.png"/>
+						</div>
 						<figcaption>
 							<h4>仓储物流</h4>
 							<hr />
@@ -136,7 +87,9 @@
 						</figcaption>
 					</figure>
 					<figure>
-						<img src="images/index_33.png"/>
+						<div>
+							<img src="images/index_33.png"/>
+						</div>
 						<figcaption>
 							<h4>仓储物流</h4>
 							<hr />
@@ -145,7 +98,9 @@
 						</figcaption>
 					</figure>
 					<figure>
-						<img src="images/index_35.png"/>
+						<div>
+							<img src="images/index_35.png"/>
+						</div>
 						<figcaption>
 							<h4>仓储物流</h4>
 							<hr />
@@ -191,4 +146,16 @@
 	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="components/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript">
+		$('.nav1').addClass('active');
+		var banner=0;
+		setInterval(function(){
+			banner++;
+			if(banner>=$('.index .banner div').length){
+				banner=0;
+			}
+			console.log(banner);
+			$('.index .banner div').eq(banner).fadeIn(500).siblings().fadeOut(500);
+		},5000);
+	</script>
 </html>

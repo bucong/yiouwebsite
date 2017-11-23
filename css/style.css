@@ -30,6 +30,9 @@ header .head-nav img {
 header .head-nav .navbar-header {
   margin: 0;
 }
+header .head-nav .navbar-header a {
+  display: none;
+}
 header .head-nav .navbar-default {
   border: none;
   background: transparent;

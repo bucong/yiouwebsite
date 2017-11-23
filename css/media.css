@@ -67,6 +67,11 @@
     width: 100%;
   }
 }
+@media all and (max-width: 768px) {
+  header .head-nav .navbar-header a {
+    display: block;
+  }
+}
 @media all and (max-width: 992px) and (min-width: 767px) {
   header .logo-word {
     padding: 0 15px;

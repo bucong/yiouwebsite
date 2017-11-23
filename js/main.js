@@ -1,7 +1,7 @@
 $(function() {
-	$('.index .intro .tab div').click(function(){
+	$('.index .intro .tab div').mouseover(function(){
 		$(this).addClass('active').siblings().removeClass('active');
-		$('.index .intro li').eq($(this).index()).css('display','flex').siblings().css('display','none');
+		$('.index .intro li').eq($(this).index()).show().siblings().hide();
 	})
 	$('.contact-us li').click(function(){
 		$(this).addClass('active').siblings().removeClass('active');

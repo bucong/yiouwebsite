@@ -1,0 +1,113 @@
+@media all and (max-width: 400px) {
+  header .logo-word {
+    padding: 0 15px;
+    text-align: center;
+  }
+  header .qr {
+    display: none;
+  }
+  header .logo {
+    text-align: center;
+  }
+  .index .service .title div {
+    width: 100%;
+  }
+  .index .service .title div i {
+    left: 43%;
+  }
+  .index .service .server figure {
+    width: 100%;
+  }
+  .index .service .server figure img {
+    width: 100%;
+    height: auto;
+  }
+  .index .service .server figure div {
+    width: 100%;
+    height: auto;
+  }
+  .index .intro ul li img {
+    width: 100%;
+    height: auto;
+  }
+  .news .list li .time span {
+    text-indent: 200px;
+  }
+  .join-us .list li .time span {
+    text-indent: 200px;
+  }
+  .contact-us .contact .style {
+    width: 100%;
+  }
+}
+@media all and (max-width: 768px) and (min-width: 401px) {
+  header .logo-word {
+    padding: 0 15px;
+    text-align: center;
+  }
+  header .qr {
+    display: none;
+  }
+  header .logo {
+    text-align: center;
+  }
+  .index .service .title div {
+    width: 100%;
+  }
+  .index .service .title div i {
+    left: 43%;
+  }
+  .news .list li .time span {
+    text-indent: 400px;
+  }
+  .join-us .list li .time span {
+    text-indent: 280px;
+  }
+  .contact-us .contact .style {
+    width: 100%;
+  }
+}
+@media all and (max-width: 992px) and (min-width: 767px) {
+  header .logo-word {
+    padding: 0 15px;
+  }
+  header .head-nav .navbar-collapse a {
+    padding-left: 10px;
+  }
+  .news .list li .time span {
+    text-indent: 20px;
+  }
+  .join-us .list li .time span {
+    text-indent: 20px;
+  }
+}
+@media all and (max-width: 992px) {
+  footer .container .col-md-2 {
+    width: 100%;
+  }
+  footer .container span {
+    line-height: 20px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  footer .container .fa-angle-down {
+    display: block;
+  }
+  footer .container .fa-angle-right {
+    display: none;
+  }
+}
+@media all and (max-width: 1200px) and (min-width: 993px) {
+  header .logo-word {
+    padding: 0 50px;
+  }
+  header .qr {
+    padding: 0;
+  }
+  header .head-nav .navbar-collapse a {
+    padding-left: 25px;
+  }
+  .news .list li .time span {
+    text-indent: 60px;
+  }
+}

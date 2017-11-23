@@ -3,78 +3,90 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>首页</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link rel="stylesheet" href="css/reset.css" />
 		<link rel="stylesheet" href="components/bootstrap/css/bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="components/font-awesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate.css"/>
 		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/media.css"/>
 	</head>
 	<body>
 		<header>
-			<div class="contain flex">
-				<div class="flex logo">
-					<img src="images/index_03.png" />
-					<div>
-						<h6>上海宜欧国际物流有限公司</h6>
-						<h6>OCEAN EAST International Logistics Co.Lbd.</h6>
+			<div class="container">
+				<div class="row top">
+					<div class="logo col-md-1 col-sm-2 col-xs-12">
+						<img src="images/index_02.png"/>
 					</div>
-				</div>
-				<div class="flex qr">
-					<h5>微信扫一扫<br />宜欧公众号</h5>
-					<img src="images/index_06.png" />
+					<div class="logo-word col-md-5 col-sm-5 col-xs-12">
+						<h6>上海宜欧国际物流有限公司 <br />OCEAN EAST International Logistics Co.Ltd.</h6>
+					</div>
+					<div class="qr col-md-2 col-md-offset-4 col-sm-3 col-sm-offset-2 col-xs-12 flex">
+						<h5>微信扫一扫 <br />宜欧公众号</h5>
+						<img src="images/index_06.png"/>
+					</div>
 				</div>
 			</div>
 			<div class="head-nav med">
-				<nav class="contain">
-					<ul>
-						<li>
-							<p><a href="index.html" class="active">首页</a></p>
-						</li>
-						<li>
-							<p><a href="news.html">公司新闻</a></p>
-						</li>
-						<li>
-							<p><a href="javascript:void(0)">主营业务</a></p>
-							<div>
-								<a href="">仓库物流</a>
-								<a href="">保税物流</a>
-								<a href="">运输服务</a>
-								<a href="">堆场服务</a>
-								<a href="">电商服务</a>
-							</div>
-						</li>
-						<li>
-							<p><a href="javascript:void(0)">特色服务</a></p>
-							<div>
-								<a href="">在线服务</a>
-								<a href="">逆向物流</a>
-								<a href="">CHB</a>
-							</div>
-						</li>
-						<li>
-							<p><a href="">业务查询</a></p>
-						</li>
-						<li>
-							<p><a href="joinUs.html">加入我们</a></p>
-						</li>
-						<li>
-							<p><a href="">关于我们</a></p>
-						</li>
-						<li>
-							<p><a href="contactUs.html">联系我们</a></p>
-						</li>
-					</ul>
-				</nav>
+				<div class="navbar navbar-default container">
+			        <div class="navbar-header">
+			            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#coll">
+			                <span class="icon-bar"></span>
+			                <span class="icon-bar"></span>
+			                <span class="icon-bar"></span>
+			            </button>
+			        </div>
+			        <div class="collapse navbar-collapse" id="coll">
+			            <ul class="nav navbar-nav">
+			                <li><a href="index.html" class="active">首页</a></li>
+			                <li><a href="news.html">公司新闻</a></li>
+			                <li class="dropdown">
+			                    <a href="javascript:void(0)" data-toggle="dropdown">主营业务<span class="caret"></span></a>
+			                    <ul class="dropdown-menu animated fadeInLeft">
+			                        <li><a href="businessDetail.html">仓库物流</a></li>
+			                        <li><a href="businessDetail.html">保税物流</a></li>
+			                        <li><a href="businessDetail.html">运输服务</a></li>
+			                        <li><a href="businessDetail.html">堆场服务</a></li>
+			                        <li><a href="businessDetail.html">电商服务</a></li>
+			                    </ul>
+			                </li>
+			                <li class="dropdown">
+			                    <a href="javascript:void(0)" data-toggle="dropdown">特色服务<span class="caret"></span></a>
+			                    <ul class="dropdown-menu animated fadeInLeft">
+			                        <li><a href="">在线服务</a></li>
+			                        <li><a href="">逆向物流</a></li>
+			                        <li><a href="">CHB</a></li>
+			                    </ul>
+			                </li>
+			                <li><a href="">业务查询</a></li>
+			                <li><a href="joinUs.html">加入我们</a></li>
+			                <li><a href="">关于我们</a></li>
+			                <li><a href="contactUs.html">联系我们</a></li>
+			
+			            </ul>
+			        </div>
+			   </div>
 			</div>
 		</header>
 		<article class="index">
-			<section class="banner med"></section>
-			<section class="service contain">
+			<section class="banner">
+				<div>
+					<img src="images/index_10.png"/>
+				</div>
+				<div>
+					<img src="images/index_1.png"/>
+				</div>
+				<div>
+					<img src="images/index_2.png"/>
+				</div>
+			</section>
+			<section class="service container">
 				<div class="title">
 					<h2>我们的<span>6大服务</span></h2>
 					<div><i></i></div>
 				</div>
-				<ul>
-					<li>
+				<ul class="row">
+					<li class="col-lg-4 col-sm-6 col-xs-12">
 						<img src="images/index_13.png"/>
 						<div>
 							<h3>智能仓储</h3>
@@ -82,7 +94,7 @@
 							<p>帆布百里 孵化器拉面病毒产品管理直邮邮寄。这样的创始人游戏化效果</p>
 						</div>
 					</li>
-					<li>
+					<li class="col-lg-4 col-sm-6 col-xs-12">
 						<img src="images/index_15.png"/>
 						<div>
 							<h3>移动预约</h3>
@@ -90,7 +102,7 @@
 							<p>帆布百里 孵化器拉面病毒产品管理直邮邮寄。这样的创始人游戏化效果</p>
 						</div>
 					</li>
-					<li>
+					<li class="col-lg-4 col-sm-6 col-xs-12">
 						<img src="images/index_17.png"/>
 						<div>
 							<h3>精益管理</h3>
@@ -98,9 +110,7 @@
 							<p>帆布百里 孵化器拉面病毒产品管理直邮邮寄。这样的创始人游戏化效果</p>
 						</div>
 					</li>
-				</ul>
-				<ul>
-					<li>
+					<li class="col-lg-4 col-sm-6 col-xs-12">
 						<img src="images/index_23.png"/>
 						<div>
 							<h3>C-TPAT</h3>
@@ -108,7 +118,7 @@
 							<p>帆布百里 孵化器拉面病毒产品管理直邮邮寄。这样的创始人游戏化效果</p>
 						</div>
 					</li>
-					<li>
+					<li class="col-lg-4 col-sm-6 col-xs-12">
 						<img src="images/index_25.png"/>
 						<div>
 							<h3>增值服务</h3>
@@ -116,7 +126,7 @@
 							<p>帆布百里 孵化器拉面病毒产品管理直邮邮寄。这样的创始人游戏化效果</p>
 						</div>
 					</li>
-					<li>
+					<li class="col-lg-4 col-sm-6 col-xs-12">
 						<img src="images/index_26.png"/>
 						<div>
 							<h3>7*24小时</h3>
@@ -125,9 +135,12 @@
 						</div>
 					</li>
 				</ul>
-				<div class="flex server">
+				<div class="server row">
+					<div class="col-lg-4 col-md-6">
 					<figure>
-						<img src="images/index_31.png"/>
+						<div>
+							<img src="images/index_31.png"/>
+						</div>
 						<figcaption>
 							<h4>仓储物流</h4>
 							<hr />
@@ -135,8 +148,12 @@
 							<a href="">阅读更多 <i class="fa fa-angle-right"></i></a>
 						</figcaption>
 					</figure>
+					</div>
+					<div class="col-lg-4 col-md-6">
 					<figure>
-						<img src="images/index_33.png"/>
+						<div>
+							<img src="images/index_33.png"/>
+						</div>
 						<figcaption>
 							<h4>仓储物流</h4>
 							<hr />
@@ -144,8 +161,12 @@
 							<a href="">阅读更多 <i class="fa fa-angle-right"></i></a>
 						</figcaption>
 					</figure>
+					</div>
+					<div class="col-lg-4 col-md-6">
 					<figure>
-						<img src="images/index_35.png"/>
+						<div>
+							<img src="images/index_35.png"/>
+						</div>
 						<figcaption>
 							<h4>仓储物流</h4>
 							<hr />
@@ -153,32 +174,34 @@
 							<a href="">阅读更多 <i class="fa fa-angle-right"></i></a>
 						</figcaption>
 					</figure>
+					</div>
 				</div>
 			</section>
-			<section class="intro contain">
+			<section class="intro container">
 				<div class="tab flex">
 					<div class="active">公司概况</div>
 					<div>公司理念</div>
 					<div>发展历程</div>
 				</div>
-				<ul>
-					<li class="flex" style="display: flex;">
-						<img src="images/index_40.png"/>
-						<div>
+				<hr />
+				<ul class="row">
+					<li style="display: block;">
+						<img src="images/index_40.png" class="col-md-4 col-dm-12"/>
+						<div class="col-md-8 col-sm-12">
 							<h4>一般的信息</h4>
 							<p>主要业务涵盖:仓储管理，长途运输，货运代理，市内配送以及冷链物流等领域，注册资本1200万元，公司致力于为国内外各行业客户提供个性化物流解决方案和其它增值服务。公司总部位于上海，并在北京， 沈阳，广州，西安，成都，武汉等全国各大主要城市设有分公司和办事处，服务网络遍布全国所有城市，可实现无盲区送达。  主要业务涵盖:仓储管理，长途运输，货运代理，市内配送以及冷链物流等领域，注册资本1200万元，公司致力于为国内外各行业客户提供个性化物流解决方案和其它增值服务。公司总部位于上海，并在北京， 沈阳，广州，西安，成都，武汉等全国各大主要城市设有分公司和办事处，服务网络遍布全国所有城市，可实现无盲区送达。  主要业务涵盖:仓储管理，长途运输，货运代理，市内配送以及冷链物流等领域，注册资本1200万元，公司致力于为国内外各行业客户提供个性化物流解决方案和其它增值服务。公司总部位于上海，并在北京， 沈阳，广州，西安，成都，武汉等全国各大主要城市设有分公司和办事处，服务网络遍布全国所有城市，可实现无盲区送达。</p>
 						</div>
 					</li>
-					<li class="flex">
-						<img src="images/index_40.png"/>
-						<div>
+					<li>
+						<img src="images/index_40.png" class="col-md-4 col-dm-12"/>
+						<div class="col-md-8 col-sm-12">
 							<h4>一般的信息2</h4>
 							<p>主要业务涵盖:仓储管理，长途运输，货运代理，市内配送以及冷链物流等领域，注册资本1200万元，公司致力于为国内外各行业客户提供个性化物流解决方案和其它增值服务。公司总部位于上海，并在北京， 沈阳，广州，西安，成都，武汉等全国各大主要城市设有分公司和办事处，服务网络遍布全国所有城市，可实现无盲区送达。  主要业务涵盖:仓储管理，长途运输，货运代理，市内配送以及冷链物流等领域，注册资本1200万元，公司致力于为国内外各行业客户提供个性化物流解决方案和其它增值服务。公司总部位于上海，并在北京， 沈阳，广州，西安，成都，武汉等全国各大主要城市设有分公司和办事处，服务网络遍布全国所有城市，可实现无盲区送达。  主要业务涵盖:仓储管理，长途运输，货运代理，市内配送以及冷链物流等领域，注册资本1200万元，公司致力于为国内外各行业客户提供个性化物流解决方案和其它增值服务。公司总部位于上海，并在北京， 沈阳，广州，西安，成都，武汉等全国各大主要城市设有分公司和办事处，服务网络遍布全国所有城市，可实现无盲区送达。</p>
 						</div>
 					</li>
-					<li class="flex">
-						<img src="images/index_40.png"/>
-						<div>
+					<li>
+						<img src="images/index_40.png" class="col-md-4 col-dm-12"/>
+						<div class="col-md-8 col-sm-12">
 							<h4>一般的信息3</h4>
 							<p>主要业务涵盖:仓储管理，长途运输，货运代理，市内配送以及冷链物流等领域，注册资本1200万元，公司致力于为国内外各行业客户提供个性化物流解决方案和其它增值服务。公司总部位于上海，并在北京， 沈阳，广州，西安，成都，武汉等全国各大主要城市设有分公司和办事处，服务网络遍布全国所有城市，可实现无盲区送达。  主要业务涵盖:仓储管理，长途运输，货运代理，市内配送以及冷链物流等领域，注册资本1200万元，公司致力于为国内外各行业客户提供个性化物流解决方案和其它增值服务。公司总部位于上海，并在北京， 沈阳，广州，西安，成都，武汉等全国各大主要城市设有分公司和办事处，服务网络遍布全国所有城市，可实现无盲区送达。  主要业务涵盖:仓储管理，长途运输，货运代理，市内配送以及冷链物流等领域，注册资本1200万元，公司致力于为国内外各行业客户提供个性化物流解决方案和其它增值服务。公司总部位于上海，并在北京， 沈阳，广州，西安，成都，武汉等全国各大主要城市设有分公司和办事处，服务网络遍布全国所有城市，可实现无盲区送达。</p>
 						</div>
@@ -186,9 +209,64 @@
 				</ul>
 			</section>
 		</article>
-		<script src="js/footer.js" type="text/javascript" charset="utf-8"></script>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2 col-sm-12 flex">
+						<div>
+							<h5>微信扫一扫 关注我们</h5>
+							<img src="images/index_44.png"/>
+							<p>打开微信 <i class="fa fa-caret-right"></i> 发现 <i class="fa fa-caret-right"></i> 扫一扫 <i class="fa fa-caret-right"></i> 关注</p>
+						</div>
+					</div>
+					<span class="fa fa-angle-right col-md-1 col-sm-12"></span>	
+					<span class="fa fa-angle-down col-md-1 col-sm-12"></span>	
+					<div class="col-md-2 col-sm-12 flex">
+						<div>
+							<h3>STEP 1</h3>
+							<p>关注过公众号后，进入公众号进行预约</p>
+							<p>通讯录 <i class="fa fa-caret-right"></i> 公众号 <i class="fa fa-caret-right"></i> 宜欧物流</p>
+						</div>
+					</div>
+					<span class="fa fa-angle-right col-md-1 col-sm-12"></span>	
+					<span class="fa fa-angle-down col-md-1 col-sm-12"></span>	
+					<div class="col-md-2 col-sm-12 flex">
+						<div>
+							<h3>STEP 2</h3>
+							<p>第一次关注的司机需要注册</p>
+							<p>我 <i class="fa fa-caret-right"></i> 司机注册</p>
+						</div>
+					</div>
+					<span class="fa fa-angle-right col-md-1 col-sm-12"></span>	
+					<span class="fa fa-angle-down col-md-1 col-sm-12"></span>
+					<div class="col-md-2 col-sm-12 flex">
+						<div>
+							<h3>STEP 3</h3>
+							<p>注册过的司机可以直接预约提货</p>
+							<p>我 <i class="fa fa-caret-right"></i> 预约</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 	</body>
 	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="components/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript">
+		$('.banner').css('height',$(window).width()*0.432+'px');
+		$(window).resize(function() {   
+			console.log($(window).width())
+			$('.banner').css('height',$(window).width()*0.432+'px');
+		});
+		var banner=0;
+		setInterval(function(){
+			banner++;
+			if(banner>=$('.index .banner div').length){
+				banner=0;
+			}
+			console.log(banner);
+			$('.index .banner div').eq(banner).fadeIn(500).siblings().fadeOut(500);
+		},5000);
+	</script>
 </html>

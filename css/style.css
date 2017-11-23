@@ -4,6 +4,12 @@ html {
 a {
   text-decoration: none !important;
 }
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.dropdown-menu:hover {
+  display: block;
+}
 header .top {
   padding: 10px 0;
 }
@@ -41,6 +47,8 @@ header .head-nav .navbar-default {
 }
 header .head-nav .navbar-default .navbar-collapse {
   padding: 0;
+}
+header .head-nav .navbar-default li {
   padding: 20px 0;
 }
 header .head-nav .navbar-default a {
@@ -61,7 +69,10 @@ header .head-nav .navbar-default .dropdown-menu {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   border: none;
   background: #fff;
-  top: 70px;
+  top: 90px;
+}
+header .head-nav .navbar-default .dropdown-menu li {
+  padding: 0;
 }
 header .head-nav .navbar-default .dropdown-menu a {
   line-height: 44px;
@@ -386,6 +397,7 @@ footer .container .fa-angle-down {
 }
 .news-detail .content .title span {
   font-size: 12px;
+  text-align: right;
 }
 .news-detail .content .detail img {
   max-width: 100%;
@@ -409,6 +421,9 @@ footer .container .fa-angle-down {
   font-size: 16px;
   margin: 0 0 20px 0;
 }
+.news-detail .commend li h4 a {
+  color: #000;
+}
 .news-detail .commend li p {
   line-height: 30px;
   font-size: 12px;
@@ -417,7 +432,7 @@ footer .container .fa-angle-down {
 .news-detail .commend li:last-child {
   border-bottom: none;
 }
-.news-detail .commend li:hover h4 {
+.news-detail .commend li:hover h4 a {
   color: #7cc46c;
 }
 .business-detail {
@@ -430,7 +445,7 @@ footer .container .fa-angle-down {
   border-bottom: 1px solid #ebebeb;
 }
 .business-detail .content h5 {
-  color: #989898;
+  color: #000;
   margin: 30px 0 10px 0;
 }
 .business-detail .content img {
@@ -460,6 +475,7 @@ footer .container .fa-angle-down {
   background: #fff;
   cursor: pointer;
   border-right: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
 }
 .contact-us ul li h5 {
   font-weight: bold;
@@ -472,6 +488,7 @@ footer .container .fa-angle-down {
 }
 .contact-us ul li:last-child {
   border-right: none;
+  border-bottom: none;
 }
 .contact-us ul .active {
   color: #fff;

@@ -1,4 +1,7 @@
 $(function() {
+	$('.head-nav .navbar-nav a').click(function(){
+		$(this).css('color','#fff');
+	})
 	$('.index .intro .tab div').mouseover(function(){
 		$(this).addClass('active').siblings().removeClass('active');
 		$('.index .intro li').eq($(this).index()).show().siblings().hide();

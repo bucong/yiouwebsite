@@ -4,7 +4,12 @@ html {
 a{
     text-decoration: none !important;
 }
-
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.dropdown-menu:hover{
+    display: block;
+}
 header{
     .top{
         padding: 10px 0;
@@ -41,6 +46,8 @@ header{
             margin-bottom: 0;
             .navbar-collapse{
                 padding: 0;
+            }
+            li{
                 padding: 20px 0;
             }
             a{
@@ -60,7 +67,10 @@ header{
                 box-shadow: 0 10px 30px rgba(0,0,0,.1);
                 border: none;
                 background: #fff;
-                top: 70px;
+                top: 90px;
+                li{
+                    padding: 0;
+                }
                 a{
                     line-height: 44px;
                     color: #000;
@@ -408,6 +418,7 @@ footer{
             }
             span{
                 font-size: 12px;
+                text-align: right;
             }
         }
         .detail{
@@ -434,6 +445,9 @@ footer{
             h4{
                 font-size: 16px;
                 margin: 0 0 20px 0;
+                a{
+                    color: #000;
+                }
             }
             p{
                 line-height: 30px;
@@ -446,7 +460,9 @@ footer{
         }
         li:hover{
             h4{
-                color: #7cc46c;
+                a{
+                    color: #7cc46c;
+                }
             }
         }
     }
@@ -462,7 +478,7 @@ footer{
             border-bottom: 1px solid #ebebeb;
         }
         h5{
-            color: #989898;
+            color: #000;
             margin: 30px 0 10px 0;
         }
         img{
@@ -495,6 +511,7 @@ footer{
             background: #fff;
             cursor: pointer;
             border-right: 1px solid #e6e6e6;
+            border-bottom: 1px solid #e6e6e6;
             h5{
                 font-weight: bold;
                 margin: 0;
@@ -507,6 +524,7 @@ footer{
         }
         li:last-child{
             border-right: none;
+            border-bottom: none;
         }
         .active{
             color: #fff;
